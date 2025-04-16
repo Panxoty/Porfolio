@@ -1,24 +1,25 @@
 ---
-import { date } from "astro:schema"
 import ExperienceItem from "./ExperienceItem.astro"
-import type { ACTION_ERROR_CODES } from "astro:actions"
+
 
 const EXPERIENCIE = [
     {
-        date: "February 2022",
-        title: "Application UI code in Tailwind CSS",
-        description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-        link: "#",   
+        date: "Actualmente...",
+        title: "Freelance",
+        enterprise: "",
+        description: "Desarrollo de aplicaciones web, principalmente en el stack MERN. Donde empleo mis conocimientos en React, Node.js y MongoDB para crear aplicaciones escalables y eficientes.",
+        link: "",   
     },
     {
-        date: "March 2022",
-        title: "Marketing UI design in Figma",
-        description: "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.",
-        link: "#",
+        date: "Dicembre 2023 - Marzo 2024",
+        title: "Practica Profesional",
+        enterprise: "ABTEC",
+        description: "Desarrolle una aplicacion web para la gestion de proyectos internos de la empresa, utilizando PHP, PostgreSQL, JavaScript y Sass esta aplicacion permite gestionar los proyectos internos de la empresa, permitiendo a los usuarios crear, editar y eliminar proyectos, ademas de asignar tareas a los mismos.",
+        link: "",
     }
 ]
 ---
-<ol class="relative border-s border-gray-200 dark:border-gray-700">   
+<ol class="relative border-s border-gray-200 dark:border-gray-500 ml-3">   
     {EXPERIENCIE.map(experiencie => (
         <li class="mb-10 ms-4">
             <ExperienceItem {...experiencie}/>
