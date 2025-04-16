@@ -4,6 +4,8 @@ import Badge from '../components/Badge.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Experience from '../components/Experience.astro';
 import SocialPill from '../components/SocialPill.astro';
+import Skills from '../components/Skills.astro';
+
 import LinkedInIcon from '../icons/LinkedIn.astro';
 import GitHubIcon from '../icons/GitHub.astro';
 import EmailIcon from '../icons/Email.astro';
@@ -48,6 +50,11 @@ const LinkedVariable = 'https://www.linkedin.com/in/panxo/';
 				Experiencia laboral
 			</h2>
 			<Experience/>
+		</SectionContainer>
+		<SectionContainer id="skills">
+			<h2 class="text-3xl font-bold mb-4">Skills</h2>
+			<p class="text-sm dark:text-gray-400 mb-4">Tecnologías y herramientas que manejo</p>
+			<Skills/>
 		</SectionContainer>
 	</main>
 </Layout>
