@@ -11,6 +11,7 @@ import LinkedInIcon from '../icons/LinkedIn.astro';
 import GitHubIcon from '../icons/GitHub.astro';
 import EmailIcon from '../icons/Email.astro';
 import Briefcase from '../icons/Briefcase.astro';
+import Projects from '../components/Projects.astro';
 
 const LinkedVariable = 'https://www.linkedin.com/in/panxo/';
 
@@ -29,7 +30,7 @@ const LinkedVariable = 'https://www.linkedin.com/in/panxo/';
 				Desarrollador Fullstack
 			</p>
 			<h2 class="lg:text-xl mt-6 md:mt-10 text-wrap opacity-80">
-			+1 Año de experiencia.<span class="text-emerald-200 font-bold">{' '}Ingeniero en Informática.{' '}Especializado en crear soluciones web robustas y escalables</span>. Me apasiona aprender nuevas tecnologías y mejorar mis habilidades constantemente.
+			+1 Año de experiencia.<span class="text-emerald-200 font-medium">{' '}Ingeniero en Informática.{' '}Especializado en crear soluciones web robustas y escalables</span>. Me apasiona aprender nuevas tecnologías y mejorar mis habilidades constantemente.
 			</h2>
 			<nav class="flex gap-x-4 mt-6">
 				<SocialPill href={LinkedVariable}>
@@ -48,17 +49,31 @@ const LinkedVariable = 'https://www.linkedin.com/in/panxo/';
 			<!--Flecha experience -->
 			<RowExperience/>
 		</SectionContainer>
-		<SectionContainer id="experiencia" class="pt-24 px-2">
+		<SectionContainer id="experiencia" class="pt-40 px-2">
 			<h2 class="text-3xl font-bold mb-6 flex gap-x-3 items-center">
 				<Briefcase class="size-8"/>
 				Experiencia laboral
 			</h2>
 			<Experience/>
 		</SectionContainer>
+		<!-- Section skills -->
 		<SectionContainer id="skills">
-			<h2 class="text-3xl font-bold mb-4">Skills</h2>
-			<p class="text-sm dark:text-gray-400 mb-4">Tecnologías y herramientas que manejo</p>
+			<h2 class="text-3xl font-bold mb-4">Tecnologias y Herramientas</h2>
 			<Skills/>
+		</SectionContainer>
+		<!-- Section projects -->
+		 <SectionContainer id="projects">
+			<h2 class="text-3xl font-bold mb-4">Proyectos</h2>
+			<Projects/>
+		</SectionContainer>
+		<!--Section About -->
+		<SectionContainer id="sobre-mi">
+			<h2 class="text-3xl font-bold mb-4">Sobre mí</h2>
+			
+		</SectionContainer>
+		<!-- Section Contacto -->
+		<SectionContainer id="contacto">
+			<h2 class="text-3xl font-bold mb-4">Contacto</h2>
 		</SectionContainer>
 	</main>
 </Layout>
